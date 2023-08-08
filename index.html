@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=Roboto&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid pt-4 ps-5 pb-5">
+            <a class="navbar-brand d-flex ms-5" href="#"><img src="imgs/logo@2x.png" alt=""
+                    class="logo my-auto ms-5 me-2" width="64" height="38">
+                <div class="logo-type d-flex flex-column ps-2">
+                    <h1 class="tit">Weather</h1>
+                    <small class="sit-desc">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-5 me-5">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="home d-flex">
+        <div class="container">
+            <form class="location position-relative">
+                <input type="text" placeholder="Find Your location" class="form-control mt-5 rounded-pill py-3"
+                    id="search">
+                <input onclick="getCity()" type="button" class="btn btn-info rounded-pill forbutton text-white"
+                    value="Find" id="submit">
+            </form>
+        </div>
+    </div>
+    <div class="infos position-relative">
+        <div class="container forposition">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <div class="forecast rounded-circle" id="show">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast" id="second">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast" id="third">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative forbg pb-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-8">
+                    <form class="position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe"
+                            class="form-control mt-5 rounded-pill py-3" id="email">
+                        <input type="button" class="btn btn-info rounded-pill forbutton text-white" value="subscribe"
+                            id="emailsub">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="d-flex align-items-center justify-content-center mt-5">
+                        <button class="btn btn-outline-info caption2content me-2"><i
+                                class="fa-brands fa-facebook-f"></i></button>
+                        <button class=" btn btn-outline-info caption2content me-2"><i
+                                class="fa-brands fa-twitter"></i></button>
+                        <button class=" btn btn-outline-info caption2content me-2"><i
+                                class="fa-brands fa-google-plus-g"></i></button>
+                        <button class=" btn btn-outline-info caption2content me-2"><i
+                                class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
